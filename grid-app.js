@@ -14,6 +14,6 @@ app.use(express.static("./public"));
 
 app.get("/", function() {
 	res.render("index", {
-		titulo : "applicacion grip"
+		titulo : "applicacion grip" 
 	});
 });
