@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head lang="es">
+		<meta charset="utf-8">
+		<title>Chat del curso</title>
+		<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body>
+		<h1>Chat del curso</h1>
+		<p>
+			<textarea id="mensaje" required></textarea>
+		</p>
+		<p>
+			<button id="enviar-mensaje">Enviar mensaje</button>
+		</p>
+		<ul id="chat">
+			{% for mensaje in mensajes %}
+				<li>{{mensaje}}</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>
