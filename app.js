@@ -5,7 +5,7 @@ var io 		= require("socket.io").listen(server);
 
 var cons 	= require("consolidate");
 
-//server.listen(3000);
+server.listen(3000);
 
 app.engine(".html", cons.jade);
 app.set("view engine", "html");
