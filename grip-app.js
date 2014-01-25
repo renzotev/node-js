@@ -17,3 +17,13 @@ app.get("/", function(req, res) {
 		titulo : "applicacion grip"
 	});
 });
+
+var connection = function(socket) {
+	console.log("Hola");
+
+	socket.on("pintar", function(data){
+		socket.broadcast.emit("pintar", data);
+	});
+}
+
+io.sockets.on("connection", connection)
